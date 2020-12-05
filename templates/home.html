@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <title>Iris Data Prediction</title>
 </head>
 <body>
 <center>
-    <h1> IRIS FLOWER DETECTION </h1>
+     <div class="card bg-info text-white">
+    <div class="card-body"><h1> IRIS FLOWER DETECTION </h1></div>
+  </div><br><br>
     <form action="{{url_for('home')}}", method="POST">
-      <b>Sepal Length(cm): <input type="text", name = "a"> <br><br>
-          Sepal Width(cm): <input type="text", name = "b"> <br><br>
-          Petal Length(cm): <input type="text", name = "c"> <br><br>
-          Petal Width(cm): <input type="text", name = "d"> <br><br>
-          <input type="submit", value="predict">
+      <b>Sepal Length(cm): <input type="number", name = "a"> <br><br>
+          Sepal Width(cm): <input type="number", name = "b"> <br><br>
+          Petal Length(cm): <input type="number", name = "c"> <br><br>
+          Petal Width(cm): <input type="number", name = "d"> <br><br>
+          <input type="submit" value="Predict" class="btn btn-dark">
       </b>
     </form>
 </center>
