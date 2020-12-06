@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <div class = "container">
@@ -34,4 +35,29 @@
 </center>
 </body>
 </div>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Prediction</title>
+</head>
+<body>
+<center>
+    <h1> Prediction: </h1>
+    {%if data == 0%}
+    <h1>Iris-setosa</h1>
+    <img src="static\setosa.jpg">
+    {%elif data == 1%}
+    <h1>Iris-versicolor</h1>
+    <img src="static\versi.jpg">
+    {%else%}
+    <h1>Iris-virginica</h1>
+    <img src="static\vir.jpg">
+    {%endif%}
+    <br> <br>
+    <a href="/"> go to home</a>
+</center>
+</body>
+>>>>>>> origin/main
 </html>
