@@ -9,17 +9,26 @@
 </head>
 <body>
 <center>
-    <h1> Prediction: </h1>
+    <div class="card bg-info text-white">
+    <div class="card-body"><h1> Predicted as </h1></div>
+    </div>
     {%if data == 0%}
-    <h1>Iris-setosa</h1>
-    <img src="static\setosa.jpg">
+        <div class="card bg-info text-white">
+        <div class="card-body"><h1>Iris-setosa</h1></div>
+        </div>
+        <img src="static\Setosa.jpg">
     {%elif data == 1%}
-    <h1>Iris-versicolor</h1>
-    <img src="static\versi.jpg">
+        <div class="card bg-info text-white">
+        <div class="card-body"><h1>Iris-versicolor</h1></div>
+        </div>
+        <img src="static\Versicolour.jpg">
     {%else%}
-    <h1>Iris-virginica</h1>
-    <img src="static\vir.jpg">
+        <div class="card bg-info text-white">
+        <div class="card-body"><h1>Iris-virginica</h1></div>
+        </div>
+        <img src="static\Virginica.jpg">
     {%endif%}
+
     <br> <br>
     <a href="/"> go to home</a>
 </center>
